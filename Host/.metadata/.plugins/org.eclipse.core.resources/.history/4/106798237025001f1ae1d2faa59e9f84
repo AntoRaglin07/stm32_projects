@@ -1,0 +1,8 @@
+#include <stdio.h>
+
+void main(){
+	int a;
+	printf("hi");
+	scanf("%d",&a);
+	printf("val a: %d",a);
+}

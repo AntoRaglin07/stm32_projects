@@ -1,0 +1,10 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Setting_Pruitf,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Stm_Led_Blinking,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:stm_Push_Button,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:stm_driver_led
+eclipse.preferences.version=1
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Setting_Pruitf/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Setting_Pruitf/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Stm_Led_Blinking/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:stm_Push_Button/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:stm_driver_led/activeLaunchMode=run

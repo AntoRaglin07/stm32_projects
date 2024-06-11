@@ -1,0 +1,21 @@
+21:30:16 **** Incremental Build of configuration Debug for project stm_driver_led ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DNUCLEO_F411RE -DSTM32 -DSTM32F4 -DSTM32F411RETx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "stm_driver_led.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\antor\Documents\Stm32F411RE_Project\Target\stm_driver_led\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm_driver_led.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm_driver_led.elf
+ 
+arm-none-eabi-size  stm_driver_led.elf 
+arm-none-eabi-objdump -h -S stm_driver_led.elf  > "stm_driver_led.list"
+   text	   data	    bss	    dec	    hex	filename
+    800	      0	   1568	   2368	    940	stm_driver_led.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm_driver_led.list
+ 
+21:30:23 **** Incremental Build of configuration Debug for project stm_driver_led ****
+make -j16 all 
+arm-none-eabi-size  stm_driver_led.elf 
+   text	   data	    bss	    dec	    hex	filename
+    800	      0	   1568	   2368	    940	stm_driver_led.elf
+Finished building: default.size.stdout
+ 

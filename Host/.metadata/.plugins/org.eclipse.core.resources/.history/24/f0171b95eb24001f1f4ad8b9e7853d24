@@ -1,0 +1,11 @@
+/*
+ * functions.c
+ *
+ *  Created on: Jun 7, 2024
+ *      Author: antor
+ */
+
+
+void msg(){
+	printf("Hi");
+}

@@ -1,0 +1,17 @@
+22:07:46 **** Incremental Build of configuration Debug for project Header_Check ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o functions.o "..\\functions.c" 
+..\functions.c: In function 'msg':
+..\functions.c:11:9: error: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   11 |         printf("Hi");
+      |         ^~~~~~
+..\functions.c:1:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+  +++ |+#include <stdio.h>
+    1 | /*
+..\functions.c:11:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+   11 |         printf("Hi");
+      |         ^~~~~~
+..\functions.c:11:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+
+22:07:46 Build Failed. 1 errors, 1 warnings. (took 146ms)
+

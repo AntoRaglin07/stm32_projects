@@ -1,0 +1,32 @@
+#include <stdint.h>
+#include<stdio.h>
+
+
+
+int main(void)
+{
+	uint32_t *RCC_AHB1ENR = (uint32_t *)0x40023830;
+	uint32_t *GPIOC_MODER = (uint32_t *)0x40020800;
+	uint32_t *GPIOA_MODER = (uint32_t *)0x40020000;
+	uint32_t *GPIOA_ODR = (uint32_t *)0x40020014;
+	uint32_t *GPIOC_IDR = (uint32_t *)0x40020810;
+
+
+	*RCC_AHB1ENR |= 0x05;				//Enable clock for AHB1 for PORTA nd PORTC
+	*GPIOA_MODER &= 0xFFFFF3FF;			//Output mode
+	*GPIOA_MODER |= 0x00000400;
+//	*GPIOA_ODR |= 0x20;					//Output high
+
+
+
+	*GPIOC_MODER &= 0x00000000;			//Input mode
+
+	printf("%d",*GPIOC_IDR);
+
+
+
+    /* Loop forever */
+	for(;;){
+		printf("%d",*GPIOC_IDR);
+	}
+}
